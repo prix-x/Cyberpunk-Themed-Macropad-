@@ -16,7 +16,8 @@ This project is a compact, four-key mechanical macropad wrapped in a cyberpunk a
 * **Enclosure:** 3D-printed case
 
 ## 📅 Project Roadmap
-- [ ] Finalize the circuit schematic and wiring diagram
-- [ ] 3D design and print the cyberpunk enclosure case
-- [ ] Programming
-- [ ] Final build
+ Create AI assistant
+ Finalize the circuit schematic and wiring diagram
+ 3D design and print the cyberpunk enclosure case
+ Programming
+ Final build
