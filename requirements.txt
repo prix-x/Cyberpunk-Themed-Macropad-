@@ -7,3 +7,4 @@ pydantic
 wikipedia
 duckduckgo-search
 langchain-google-genai
+google-generativeai
