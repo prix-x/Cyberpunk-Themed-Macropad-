@@ -1,21 +1,24 @@
-from dotenv import load_dotenv
 import os
-from langchain_google_genai import ChatGoogleGenerativeAI
+import google.generativeai as genai
+from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash",
-    google_api_key=os.getenv("GOOGLE_API_KEY"),
-    temperature=0.7
-)
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 def chat(user_input):
     try:
-        return llm.invoke(user_input).content
+        response = model.generate_content(user_input)
+        return response.text
     except Exception as e:
         return f"Error: {str(e)}"
 
 def summarize(text):
-    prompt = "Summarize this in simple bullet points:\n\n" + text
-    return llm.invoke(prompt).content
+    try:
+        prompt = "Summarize this in simple bullet points:\n\n" + text
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        return f"Error: {str(e)}"
