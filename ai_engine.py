@@ -11,7 +11,10 @@ llm = ChatGoogleGenerativeAI(
 )
 
 def chat(user_input):
-    return llm.invoke(user_input).content
+    try:
+        return llm.invoke(user_input).content
+    except Exception as e:
+        return f"Error: {str(e)}"
 
 def summarize(text):
     prompt = "Summarize this in simple bullet points:\n\n" + text
