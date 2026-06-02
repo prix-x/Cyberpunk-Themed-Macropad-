@@ -6,7 +6,17 @@ load_dotenv()
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-models = genai.list_models()
+model = genai.GenerativeModel("gemini-1.5-flash")
 
-for m in models:
-    print(m.name, "->", m.supported_generation_methods)
+def chat(user_input):
+    try:
+        return model.generate_content(user_input).text
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+def summarize(text):
+    try:
+        prompt = "Summarize this in simple bullet points:\n\n" + text
+        return model.generate_content(prompt).text
+    except Exception as e:
+        return f"Error: {str(e)}"
