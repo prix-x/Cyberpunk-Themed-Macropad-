@@ -19,4 +19,4 @@ def summarize(text):
         prompt = "Summarize this in simple bullet points:\n\n" + text
         return model.generate_content(prompt).text
     except Exception as e:
-        return f"Error: {str(e)}"
+        return f"Error: {str(e)}" 
