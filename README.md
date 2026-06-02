@@ -23,3 +23,20 @@ This project is a compact, four-key mechanical macropad wrapped in a cyberpunk a
 - [ ] 3D design and print the cyberpunk enclosure case (or use cardboard)
 - [ ] Program the hardware keys & OLED display
 - [ ] Final build and assembly
+
+
+###BOM(Bill Of Materials)
+
+| Component | Quantity | Approx. Cost (INR) |
+| :--- | :---: | :---: |
+| **Raspberry Pi Pico** | 1 | ₹340 |
+| **Mechanical Switches** | 4 | ₹100 |
+| **Custom Keycaps** | 4 | ₹0 (Free via #enclosure) |
+| **OLED Display (SSD1306 $I^2C$)** | 1 | ₹150 |
+| **Volume Knob (EC11 Encoder)** | 1 | ₹50 |
+| **Passive Piezo Buzzer** | 1 | ₹20 |
+| **WS2812B RGB LEDs** | 1 | ₹40 |
+| **Custom Enclosure** | 1 | ₹0 (Free via #enclosure) |
+
+
+Estimated cost~ ₹ 1500
