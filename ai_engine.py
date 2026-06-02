@@ -6,10 +6,9 @@ load_dotenv()
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash",
-    api_key=os.getenv("GOOGLE_API_KEY"),
+    google_api_key=os.getenv("GOOGLE_API_KEY"),
     temperature=0.7
 )
-
 def chat(user_input):
     return llm.invoke(user_input).content
 
