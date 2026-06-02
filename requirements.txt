@@ -8,3 +8,4 @@ python-dotenv
 pydantic
 wikipedia
 duckduckgo-search
+langchain-google-genai
