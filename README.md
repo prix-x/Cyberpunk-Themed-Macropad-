@@ -2,6 +2,9 @@
 
 This project is a compact, four-key mechanical macropad wrapped in a cyberpunk aesthetic. Built using an RGB LED and an onboard OLED display, this hardware acts as a physical desktop command center to streamline workflows and force strict productivity.
 
+# Live AI demo 
+Check out the live assistant interface running here!: [Prix AI Streamlit App] (https://prix-ai.streamlit.app/)
+
 ## 🎛️ Keymap Actions
 
 * **Key 1:** Instantly boots up my custom AI assistant interface.
@@ -18,9 +21,9 @@ This project is a compact, four-key mechanical macropad wrapped in a cyberpunk a
 ## 📅 Project Roadmap
  ## 🗺️ Project Roadmap
 
-- [x] Create AI assistant (`ai_engine.py`)(took 10+ hours 😭)
+- [x] Create AI assistant(took 10+ hours 😭)
 - [ ] Finalize the circuit schematic and wiring diagram
-- [ ] 3D design and print the cyberpunk enclosure case (or use cardboard)
+- [X] 3D design and print the cyberpunk enclosure case (or use cardboard)
 - [ ] Program the hardware keys & OLED display
 - [ ] Final build and assembly
 
